@@ -7,7 +7,7 @@
 </head>
 <body>
     <header class="page-header">
-        <nav class="navbar">
+        <nav class="barra-navegacion">
             <img src="logo.png" alt="logo-pagina">
             <ul>
                 <li><a href="main.html">Inicio</a></li>
@@ -17,55 +17,65 @@
         </nav>
     </header>
     <main>
-        <div class="mapa-interactivo">
+        <section class="mapa-seccion">
             comentario mapa aqui
-        </div>
+        </section>
 
-        <div class="Carrusel-insidentes">
-            <div>
-                <p>Auto mal estacionado</p>
-                <p>En Av.huayruropata</p>
-                <img src="" alt="">
-                <p>06-04-2025</p>
-                <p>10:25 am</p>
-                <p>PLACA: ABC123</p>
-                <p>OBS: Estacionado en doble fila</p>
-            </div>
-            <div>
-                <p>Auto mal estacionado</p>
-                <p>En Av.huayruropata</p>
-                <img src="" alt="">
-                <p>06-04-2025</p>
-                <p>10:25 am</p>
-                <p>PLACA: ABC123</p>
-                <p>OBS: Estacionado en doble fila</p>
-            </div>
-            <div>
-                <p>Auto mal estacionado</p>
-                <p>En Av.huayruropata</p>
-                <img src="" alt="">
-                <p>06-04-2025</p>
-                <p>10:25 am</p>
-                <p>PLACA: ABC123</p>
-                <p>OBS: Estacionado en doble fila</p>
-            </div>
-        </div>
-        <div class="Estadisticas">
-            <div>
-                <img src="" alt="">
-                <p>1500</p>
-                <h3>Incidentes Reportados</h3>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p>Taza de resolucion</p>
-            </div>
-            <div>
-                <h3>Tiempo promedio de respuesta</h3>
-                <p>12 horas</p>
-                <h4>Se redujo 3 horas en el ultimo mes</h4>
-            </div>
-        </div>
+        <section class="carrusel-seccion">
+            <article class="incidente-card">
+                <h3>Auto mal estacionado</h3>
+                <p class="incidente-card__ubicacion">En Av.huayruropata</p>
+                <img src="" alt="Auto gris mal estacionado">
+                <ul class="incidente-card__info">
+                    <li>Fecha: 06-04-2025</li>
+                    <li>Hora: 10:25 am</li>
+                    <li>Placa: ABC123</li>
+                    <li>Observaciones: Estacionado en doble fila</li>
+                </ul>
+            </article>
+            <article class="incidente-card">
+                <h3>Auto mal estacionado</h3>
+                <p class="incidente-card__ubicacion">En Av.huayruropata</p>
+                <img src="" alt="Auto gris mal estacionado">
+                <ul class="incidente-card__info">
+                    <li>Fecha: 06-04-2025</li>
+                    <li>Hora: 10:25 am</li>
+                    <li>Placa: ABC123</li>
+                    <li>Observaciones: Estacionado en doble fila</li>
+                </ul>
+            </article>
+            <article class="incidente-card">
+                <h3>Auto mal estacionado</h3>
+                <p class="incidente-card__ubicacion">En Av.huayruropata</p>
+                <img src="" alt="Auto gris mal estacionado">
+                <ul class="incidente-card__info">
+                    <li>Fecha: 06-04-2025</li>
+                    <li>Hora: 10:25 am</li>
+                    <li>Placa: ABC123</li>
+                    <li>Observaciones: Estacionado en doble fila</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="estadistica-seccion">
+            <ul class="estadisticas-lista">
+                <li class="stat-item">
+                    <img src="img/icono-denuncia.png" alt="" aria-hidden="true"> <p class="stat-item__numero">750</p>
+                    <h3 class="stat-item__titulo">Denuncias recibidas hasta la fecha</h3>
+                </li>
+
+                <li class="stat-item">
+                    <div class="stat-item__grafico">75%</div>
+                    <h3 class="stat-item__titulo">Tasa de resolución</h3>
+                </li>
+
+                <li class="stat-item">
+                    <h3 class="stat-item__titulo">Tiempo promedio de respuesta</h3>
+                    <p class="stat-item__numero">12 <span>horas</span></p>
+                    <p class="stat-item__subtitulo">Se redujo 3 horas en el último mes</p>
+                </li>
+            </ul>
+        </section>
     </main>
     <footer class="page-footer">
         <div class="footer-content">
@@ -74,11 +84,13 @@
                 <li><a href="terms.html">Términos y condiciones</a></li>
                 <li><a href="privacy.html">Política de Privacidad</a></li>
             </ul>
-            <h3>Contacto</h3>
-            <p>Email de Soporte: soporte@testigo.com</p>
-            <p>Teléfono de Soporte: +1 234 567 890</p>
-            <p>Dirección de Soporte: Calle Falsa 123, Ciudad, País</p>
-            <p>Horario de Soporte: Lunes a Viernes, 9am - 5pm</p>
+            <address class="footer-contacto">
+                <h3>Contacto</h3>
+                <p>Email: <a href="mailto:soporte@testigo.com">soporte@testigo.com</a></p>
+                <p>Teléfono: <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                <p>Horario: Lunes a Viernes, 9am - 5pm</p>
+            </address>
         
         </div>
         <p>© Proyecto desarrollado por el equipo de "Desarrollo de software I"</p>
