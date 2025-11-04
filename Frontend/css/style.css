@@ -185,8 +185,8 @@ main {
 
 .stat-item__grafico{
     --p: 75%;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     background: conic-gradient(#00871D var(--p), #dcdcdc 0); 
     display: flex;
@@ -195,6 +195,52 @@ main {
     font-size: 67px;
     font-weight: bold;
     color: #000;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
+/* Estilos para el pie de página */
+.page-footer {
+    position: relative;
+    overflow: hidden;
+    background-color: #00871D;
+    padding: 45px 130px;
+    font-family: Playfair Display;
+    color: white;
+}
+.footer-content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    margin-bottom: 15px;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-contacto p {
+    font-size: 14px;
+    margin-left: 12px;
+}
+.footer-contacto p a {
+    color: white;
+    text-decoration: none;
+}
+.circulo {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    background-color: #31aa4b;
+    border-radius: 50%;
+    left: -150px;
+    bottom: -150px;
+    pointer-events: none;
+}
