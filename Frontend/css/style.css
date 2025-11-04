@@ -112,13 +112,23 @@ main {
     font-family: Source Serif Pro;
 }
 .carrusel-seccion article img {
-    width: 276px;
+    width: 95%;
     height: 180px;
 }
-.carrusel-seccion article ul {
-    font-size: 14px;
-    list-style: none;
-    padding: 0px;
-    margin: 10px 0px 0px 0px;
-    font-family: Source Serif Pro;
+
+.incidente-card__info {
+    font-size: 12px;
+    width: 95%;
+}
+
+.card-info__header {
+    display: flex;              
+    justify-content: space-between; 
+    width: 100%;               
+    margin-bottom: 5px;         
+}
+
+.carrusel-seccion article .card-info__obs p {
+    font-size: 12px; 
+    margin-top: 5px;
 }
