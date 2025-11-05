@@ -4,13 +4,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/usar-plantillas.js" defer></script>
     <title>Iniciar Sesión - TestiGO</title>
 </head>
 <body>
-  <header class="page-header"></header>
-  
-  <footer class="page-footer"></footer>
+    <main class="main-login">
+        <div class="logo-costado"><a href="index.html"><img src="images/logo.png" alt="logo" height="100px"></a></div>
+        <form class="form-login">
+            <h3>Bienvenido</h3>
+            <label for="correo/dni">Correo o DNI:</label>
+            <input type="text" id="correo/dni">
 
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password">
+
+            <div class="btn">
+                <button type="button" class="btn-cancelar" onclick="location.href='index.html'">Cancelar </button>
+                <button type="submit" class="btn-registrarse">Iniciar Sesión</button>
+            </div>
+            <p>¿No tienes una cuenta aún? <a href="register.html"><strong>Regístrate aquí</strong></a></p>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+        </form>
+    </main>
 </body>
 </html>

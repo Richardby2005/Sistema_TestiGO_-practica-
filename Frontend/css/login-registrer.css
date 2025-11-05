@@ -1,0 +1,154 @@
+.main-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.logo-costado {
+    background-color: #ACFFBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100vh;
+}
+.form-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 516px;
+    padding: 20px;
+    margin-left: 180px;
+    
+}
+.form-login h3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.form-login label {
+    align-self: start;
+    font-size: small;
+}
+.form-login input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid #AFB3FF;
+    border-radius: 25px;
+    font-size: medium;
+}
+.btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    margin-bottom: 60px;
+}
+
+.btn-cancelar {
+    background-color: #848484;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-registrarse {
+    background-color: #00871D;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    width: 250px;
+}
+
+.form-login p a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.form-login a {
+    text-decoration: none;
+    color: #737373;
+    font-size: small;
+}
+
+
+/*ESTILOS PARA EL REGISTRER*/
+
+.main-registrer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.logo-costado-registrer {
+    background-color: #ACFFBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+
+}
+.form-registrer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 516px;
+    padding: 20px;
+    margin-left: 180px;
+}
+
+.form-registrer input {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: 1px solid #AFB3FF;
+    border-radius: 25px;
+    font-size: medium;
+}
+.form-registrer label {
+    align-self: start;
+    font-size: small;
+}
+.consultar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.consultar label {
+    margin-top: 30px;
+    align-items: start;
+}
+
+.consultar input {
+    width: auto;
+    border-radius: 0%;
+    margin-left: 10px;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+.consultar button {
+    background-color: #D9C700;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.form-registrer p a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}

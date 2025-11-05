@@ -4,12 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/usar-plantillas.js" defer></script>
   <title>Registro - TestiGO</title>
 </head>
 <body>
-  <header class="page-header"></header>
+    <main class="main-registrer">
+        <div class="logo-costado-registrer"><a href="index.html"><img src="images/logo.png" alt="logo" height="100px"></a></div>
+        <form class="form-registrer">
+            <h3>Crea tu cuenta</h3>
+            <div class="consultar">
+                <label for="DNI">N° de DNI:</label>
+                <input type="number" id="DNI">
 
-  <footer class="page-footer"></footer>
+                <button type="button">Consultar</button>
+            </div>
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre">
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos">
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo">
+
+            <label for="cel">Número de celular:</label>
+            <input type="tel" id="cel">
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password">
+
+            <label for="confir-password">Confirmar constraseña</label>
+            <input type="password" id="confir-password">
+
+            <div class="btn">
+                <button type="button" class="btn-cancelar" onclick="location.href='index.html'">Cancelar</button>
+                <button type="submit" class="btn-registrarse">Registrar</button>
+            </div>
+            <p>¿Ya tienes una cuenta? <a href="login.html"><strong>Inicia sesión aquí</strong></a></p>
+        </form>
+    </main>
 </body>
 </html>
