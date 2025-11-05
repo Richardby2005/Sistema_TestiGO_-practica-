@@ -1,0 +1,81 @@
+.main-about {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Playfair Display;
+
+}
+.mision-vision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 50px;
+    gap: 190px;
+}
+.mision-vision h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0%;
+    color: #00871D;
+}
+.mision-vision p {
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}
+
+.problematica h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0%;
+    color: #00871D;
+}
+.problematica p {
+    font-weight: bold;
+    font-size: small;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    width: 100vw;
+    background-color: #ACFFBE;
+}
+.equipo h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 0%;
+    color: #005813;
+}
+.equipo p {
+    max-width: 553px;
+    color: #005813;
+    text-align: center;
+    font-weight: bold;
+    font-size: small;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    list-style: none;
+}
+.cards li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+.cards li a {
+    background-color: #00871D;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 4px 15px;
+}

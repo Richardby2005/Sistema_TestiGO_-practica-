@@ -1,3 +1,5 @@
+@import "about.css";
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,7 +19,7 @@ body {
     align-items: center;
 }
 .logo-index img {
-    height: 74;
+    height: 74px;
     width: 195px;
 }
 
