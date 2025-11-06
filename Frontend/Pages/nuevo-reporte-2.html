@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/usar-plantillas.js" defer></script>
+    <title>Nuevo Reporte - TestiGO</title>
+</head>
+<body class="body-nuevo-reporte">
+    <aside class="opciones-usuario"></aside>
+    <main class="main-nuevo-reporte">
+        <h1 class="cabecera-nuevo-reporte">Nuevo Reporte</h1>
+        <form action="#" class="form-nuevo-reporte">
+            <h3>FORMULARIO REPORTE</h3>
+
+            <label for="titulo-reporte">Título del Problema:</label>
+            <input type="text" id="titulo-reporte" name="titulo-reporte" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" rows="5" required></textarea>
+            
+            <div>
+                <label for="categoria" >Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Seleccionar categoría</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="administrativo">Administrativo</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            
+
+            <label for="ubicacion">Ubicación:</label>
+            <div class="mapa-ubicacion">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15516.833994472012!2d-71.96090777662982!3d-13.522792521338262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1762149159692!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <button type="button" class="boton-real-time">Ubicación Real</button>
+            <div class="info-ubicacion">
+                <div class="distrito">
+                    <label for="distrito">Distrito:</label>
+                    <input type="text" name="distrito" id="distrito">
+                </div>
+                <div class="direccion">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion" id="direccion">
+                </div>
+            </div>
+            
+            <h2>Adjuntar Archivos</h2>
+            <label for="archivo-upload" class="cuadrado-upload"></label>
+            <input type="file" id="archivo-upload" class="input-oculto">
+
+            <div class="botones-reporte">
+                <button type="button" onclick="location.href='reportes.html'">Cancelar</button>
+                <button type="button" onclick="alert('Enviado')">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

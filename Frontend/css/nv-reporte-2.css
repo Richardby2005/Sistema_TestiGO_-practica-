@@ -1,0 +1,138 @@
+.form-nuevo-reporte {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 200px;
+    max-width: 1000px;
+}
+.form-nuevo-reporte h3 {
+    font-size: 35px;
+    font-family: Playfair Display;
+    color: #005813;
+    text-align: center;
+}
+
+.form-nuevo-reporte textarea {
+    resize: none;
+    border-radius: 12px;
+}
+
+.form-nuevo-reporte input {
+    border-radius: 10px;
+    height: 25px;
+}
+.form-nuevo-reporte label {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.form-nuevo-reporte select {
+    display: inline-block;
+    width: 190px;
+    padding: 6px;
+    border-radius: 10px;
+}
+.mapa-ubicacion {
+    background-color: #ACFFBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.mapa-ubicacion iframe {
+    width: 500px;
+    height: 250px;
+}
+.boton-real-time {
+    width: 120px;
+    align-self: center;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #D9C700;
+    color: white;
+    cursor: pointer;
+}
+.info-ubicacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 60px;
+}
+.info-ubicacion div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.info-ubicacion div label {
+    margin-bottom: 10px;
+}
+.direccion {
+    flex: 1;
+}
+.direccion input {
+    width: 100%;
+}
+
+.form-nuevo-reporte h2 {
+    align-self: center;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.input-oculto {
+  display: none;
+}
+.cuadrado-upload {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.cuadrado-upload::before,
+.cuadrado-upload::after {
+  content: '';
+  position:absolute;
+  background-color: #aaa; 
+}
+
+.cuadrado-upload::before {
+  width: 50px;
+  height: 4px;
+}
+
+.cuadrado-upload::after {
+  width: 4px;
+  height: 50px;
+}
+
+.botones-reporte {
+    display: flex;
+    justify-content: space-between;
+}
+.botones-reporte button {
+    width: 120px;
+    height: 35px;
+    background-color: #00871D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.botones-reporte button:first-child {
+    background-color: #848484;
+}
