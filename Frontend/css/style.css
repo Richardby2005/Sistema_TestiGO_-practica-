@@ -1,6 +1,7 @@
 @import "about.css";
 @import "login-registrer.css";
-@import "aside-user.css";
+@import "reportes-user.css";
+@import "editar-perfil.css";
 body {
     margin: 0;
     font-family: Arial, sans-serif;

@@ -7,7 +7,66 @@
     <script src="../js/usar-plantillas.js" defer></script>
     <title>Editar Perfil - TestiGO</title>
 </head>
-<body>
+<body class="body-editar">
     <aside class="opciones-usuario"></aside>
+    <main class="main-editar">
+        <h1 class="cabecera-editar">Editar Perfil</h1>
+        <section class="formulario-editar">
+            <div class="datos-no-editables">
+                <img src="../images/avatar.png" alt="logo TestiGO" height="150px">
+                <div class="formulario-grid"> 
+                    <div class="campo-dato">
+                        <label for="DNI">N° de DNI:</label>
+                        <input type="text" id="DNI" name="DNI" disabled value="73476365">
+                    </div>
+
+                    <div class="campo-dato">
+                        <label for="nombres">Nombres:</label>
+                        <input type="text" id="nombres" name="nombres" disabled value="Richard">
+                    </div>
+
+                    <div class="campo-dato">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" disabled value="Rodriguez Huaylla">
+                    </div>
+                </div>
+            </div>
+            
+            <form class="form-editar-perfil">
+
+                <label for="email">Correo:</label>
+                <div>
+                    <input type="email" id="email" name="email" required>
+                    <img src="../images/boton-modificar.png" alt="boton-modificar" height="25px">
+                </div>
+                
+
+                <label for="telefono">Nro de Celular:</label>
+                <div>
+                    <input type="tel" id="telefono" name="telefono">
+                    <img src="../images/boton-modificar.png" alt="boton-modificar" height="25px">
+                </div>
+                
+
+                <label for="nueva-contrasena">Nueva Contraseña:</label>
+                <div>
+                    <input type="password" id="nueva-contrasena" name="nueva-contrasena">
+                    <img src="../images/boton-modificar.png" alt="boton-modificar" height="25px">
+                </div>
+                
+
+                <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                <div>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena">
+                    <img src="../images/boton-modificar.png" alt="boton-modificar" height="25px">
+                </div>
+
+                <div class="botones-editar-perfil">
+                    <button type="button" onclick="location.href='nuevo-reporte.html'">Cancelar</button>
+                    <button type="submit">Guardar Cambios</button>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
