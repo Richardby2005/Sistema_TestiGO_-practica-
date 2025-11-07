@@ -1,0 +1,102 @@
+.body-detalles {
+    display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+}
+.main-detalles{
+    flex: 1;
+    justify-content: start;
+    align-items: stretch;
+    overflow-y: auto;
+    
+}
+
+.head-detalles {
+    background-color: #EAEAEA;
+    padding: 20px 40px;
+    margin-top: 0px;
+    font-size: 19px;
+}
+
+.datos-reporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 10px 100px;
+    font-family: Inter;
+    max-width: 800px;
+}
+.datos-reporte h2 {
+    font-size: 35px;
+    font-family: Playfair Display;
+    color: #005813;
+    text-align: center;
+}
+
+.datos-cabecera {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    font-size: 14px;
+    margin-left: 100px;
+}
+.datos-cabecera li p {
+    border: black 1px solid;
+    margin-right: 40px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.datos-reporte h4 {
+    margin-bottom: 0px;
+}
+.datos-reporte p {
+    border: black 1px solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mapa-detalles {
+    background-color: #ACFFBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.datos-institucion h3 {
+    font-weight: lighter;
+    color: #00871D;
+    font-size: 25px;
+}
+
+.datos-institucion {
+    display: grid;
+    grid-template-columns: 560px auto;
+}
+.datos-institucion h3 {
+    grid-column: 1;
+}
+.datos-institucion div {
+    grid-column: 1;
+}
+.datos-institucion img {
+    grid-column: 2;
+    margin-left: 20px;
+    margin-top: 50px;
+    border: black 1px solid;
+}
+.boton-cancelar-reporte {
+    align-self: center;
+    width: 150px;
+    padding: 10px;
+    background-color: #00871D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

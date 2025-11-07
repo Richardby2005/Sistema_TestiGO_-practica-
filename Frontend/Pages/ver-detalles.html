@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/usar-plantillas.js" defer></script>
+    <title>Ver Detalles - TestiGO</title>
+</head>
+<body class="body-detalles">
+    <aside class="opciones-usuario"></aside>
+    <main class="main-detalles">
+        <h1 class="head-detalles">Detalles Reporte</h1>
+        <form action="#" class="datos-reporte">
+            <h2>DETALLES DEL REPORTE</h2>
+            <ul class="datos-cabecera">
+                <li>
+                    <strong>Numero de reporte:</strong>
+                    <p>REP-2025-00123</p>
+                </li>
+                <li>
+                    <strong>Categoria:</strong>
+                    <p>Vias y movilidad</p>
+                </li>
+                <li>
+                    <strong>Estado Actual:</strong>
+                    <p>En proceso</p>
+                </li>
+                <li>
+                    <strong>Fecha de Creacion:</strong>
+                    <p>10/09/2025</p>
+                </li>
+            </ul>
+
+            <h4>Titulo del problema:</h4>
+            <p>Bache peligroso en la pista</p>
+
+            <h4>Descripción:</h4>
+            <p>En la Av. Los Olivos, frente al colegio San Martín, hay un bache de aproximadamente 40 cm de profundidad. Está generando accidentes a ciclistas y mototaxis.</p>
+
+            <h4>Ubicacion:</h4>
+            <p>Av. Perú 345, San sebastian</p>
+
+            <div class="mapa-detalles">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15516.833994472012!2d-71.96090777662982!3d-13.522792521338262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1762149159692!5m2!1ses-419!2spe"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" height="190px" width="100%"></iframe>
+            </div>
+
+            <h4>Evidencias:</h4>
+            // carrusel de imagenes
+
+            <div class="datos-institucion">
+                <h3>Informacion de la institucion Asignada</h2>
+                <div>
+                    <h4>Nombre:</h4>
+                    <p>Municipalidad de San Sebastian</p>
+
+                    <h4>Contacto:</h4>
+                    <p>Mesa.ayuda@munisansebastian.gob.pe</p>
+                </div>
+
+                <img src="../images/vehiculo-mal-estacionado.jpg" alt="foto-entidad" width="200px">
+            </div>
+
+            <button class="boton-cancelar-reporte" onclick="alert('reporte cancelado')">Cancelar reporte</button>
+        </form>
+    </main>
+</body>
+</html>
