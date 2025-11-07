@@ -4,6 +4,7 @@
 @import "editar-perfil.css";
 @import "nv-reporte-1.css";
 @import "nv-reporte-2.css";
+@import "mis-reportes.css";
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,6 +17,9 @@ body {
     height: 80px;
     padding: 0px 20px;
     text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 .barra-navegacion {
     display: flex;
