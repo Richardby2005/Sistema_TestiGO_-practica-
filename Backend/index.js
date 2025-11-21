@@ -2,17 +2,22 @@ const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
 
+// 1. AGREGA ESTO AL INICIO ABSOLUTO
+require('dotenv').config(); 
+
 const app = express();
 app.use(cors());
-app.use(express.json()); // Permite recibir datos en formato JSON
+app.use(express.json()); 
 
-// 1. Configuración de la conexión a la Base de Datos
+// 2. CAMBIA ESTO PARA USAR LAS VARIABLES
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',      // Tu usuario de MySQL (usualmente es 'root' en local)
-    password: '900903822',      // Tu contraseña de MySQL (deja vacío si no tienes)
-    database: 'testigo' // El nombre exacto que pusimos en el SQL
+    host: process.env.DB_HOST,      
+    user: process.env.DB_USER,      
+    password: process.env.DB_PASSWORD, // ¡Aquí ya no se ve la contraseña!
+    database: process.env.DB_NAME 
 });
+
+// ... el resto sigue igual
 
 // 2. Probar la conexión
 db.connect((err) => {
@@ -22,23 +27,6 @@ db.connect((err) => {
     }
     console.log('¡Conectado exitosamente a la base de datos MySQL!');
 });
-
-// 3. Una ruta de prueba
-app.get('/', (req, res) => {
-    res.send('El servidor del Backend está funcionando 🚀');
-});
-
-// 4. Ruta para obtener usuarios (Ejemplo)
-app.get('/usuarios', (req, res) => {
-    const sql = 'SELECT * FROM users';
-    db.query(sql, (err, data) => {
-        if (err) return res.json(err);
-        return res.json(data);
-    });
-});
-
-
-// ... código anterior de conexión a DB ...
 
 // RUTA PARA REGISTRAR USUARIOS
 app.post('/registro', (req, res) => {
@@ -69,9 +57,6 @@ app.post('/registro', (req, res) => {
         return res.status(200).json({ message: "Usuario registrado con éxito" });
     });
 });
-
-// ... app.listen ...
-
 
 
 // 5. Iniciar el servidor
