@@ -273,7 +273,7 @@ main {
 .datos-usuario {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -284,6 +284,9 @@ main {
     font-weight: bold;
     text-align: center;
     padding: 6px;
+}
+.datos-usuario a {
+    margin-top: 10px;
 }
 .menu-usuario {
     padding-left: 0%;
